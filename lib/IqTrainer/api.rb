@@ -35,8 +35,6 @@ module IqTrainer
     end
 
     def upload_image(image_path,name) 
-      puts "uploading: #{name}"
-
       image_io = IqTrainer::UploadIO.new(image_path, 'image/jpeg')
  
       data = {

@@ -9,8 +9,6 @@ options = Parser.new do |p|
   p.option :secret, 'api secret', default: ""
 end.process!
 
-pp options
-
 files = []
 Dir.foreach(options[:dir]) do |filename|
   file_path = File.join(options[:dir],filename)
